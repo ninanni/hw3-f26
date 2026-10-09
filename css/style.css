@@ -14,13 +14,11 @@ nav a:hover, nav a:focus {
 }
 
 /*Write selector/rule property to position the skip class element when it is in focus*/
-
 .skip a:focus {
      top: 25px;
 }
 
 /*Write selector/rule property to style all elements when in focus*/
-
 :focus {
      border: 5px dashed green;
 }
@@ -33,7 +31,7 @@ nav a:hover, nav a:focus {
 }
 
 /*Write selector/rule property to add the background image to the first div in the grid and place it in the grid. */
-.container > div:first-child {
+.container > div:first-of-type { 
      background-image: url('../images/header.jpg');
      background-repeat: no-repeat;
      grid-column: 1 / -1;
@@ -41,9 +39,7 @@ nav a:hover, nav a:focus {
 
 /* Steps 6 and 7: Write the selector/rule properties to  place the next five elements in the next
  five rows in the grid. */
-
-      /*This will be a lot of rules.... but be strategic and combine selectors*/
-
+ /*This will be a lot of rules.... but be strategic and combine selectors*/
 .accounts, .onlinebanking, .security, .loans, .contact {
      grid-column: 2 / span 3;
 }
